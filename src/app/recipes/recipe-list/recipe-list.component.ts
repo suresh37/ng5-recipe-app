@@ -10,9 +10,11 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
 
   recipes: Recipe[] = [
-    new Recipe("A Test Recipe 1","This is simply a test ","https://c1.staticflickr.com/6/5496/31479301445_cb53c0f4e9_b.jpg"),
-    new Recipe("A Test Recipe 2","This is simply a test ","https://www.logolynx.com/images/logolynx/82/829ba7822e43ebe89394d1ecbbf152b7.jpeg")
-  ]; 
+    new Recipe("Carrot Halva","Recipe details about the preparation of carrot Halva ","https://c1.staticflickr.com/6/5496/31479301445_cb53c0f4e9_b.jpg"),
+   // new Recipe("A Test Recipe 2","This is simply a test ","https://www.logolynx.com/images/logolynx/82/829ba7822e43ebe89394d1ecbbf152b7.jpeg")
+   new Recipe("Curd Rice","this none describes about how to prepare curd rice.","https://www.indianhealthyrecipes.com/wp-content/uploads/2016/07/curd-rice-recipes.jpg")
+   
+    ]; 
 
   constructor() { }
 
