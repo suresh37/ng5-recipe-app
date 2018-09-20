@@ -4,7 +4,10 @@
         <app-recipe-list 
         (recipeWasSelected)="selectedRecValue = $event"></app-recipe-list>
     </div>
-    <div class="col-md-7">
+    <div class="col-md-1"> 
+
+    </div>
+    <div class="col-md-5">
         <app-recipe-detail
         *ngIf="selectedRecValue; else infoText"
         [recipe]="selectedRecValue"></app-recipe-detail>
