@@ -1,15 +1,15 @@
-<div class="list-group">
+
   <a href="#" 
    class="list-group-item list-group-item-action clearfix"
    (click)="onSelect()">
-      <div class="float-sm-left">
+      <div class="pull-left">
           <h4 class="list-group-item-heading">Recipe Name: {{recipe.name}}</h4>
           <p class="list-group-item-text">Description: {{recipe.description}}</p>
       </div>
-      <span class="ml-2 float-sm-right">
+      <span class="ml-2 pull-right">
           <img 
           [src]="recipe.imagePath"
-          alt="{{ recipe.name }}" class="img-fluid rounded" style="max-height: 50px;">
+          alt="{{ recipe.name }}" class="img-responsive" style="max-height: 50px;">
       </span>
   </a>
-  </div>
+  
