@@ -6,6 +6,7 @@ import { ShoppingListService } from './shopping-list.service';
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
   styleUrls: ['./shopping-list.component.css'],
+<<<<<<< HEAD
   // providers: [ShoppingListService]
 })
 export class ShoppingListComponent implements OnInit {
@@ -22,6 +23,19 @@ export class ShoppingListComponent implements OnInit {
         this.ingredients = ingredients;
       }
     );
+=======
+  providers: [ShoppingListService]
+})
+export class ShoppingListComponent implements OnInit {
+ /*  ingredients: Ingredient[] = [ new Ingredient("Apples",10),
+     new Ingredient("Tomatoes",15) ];*/
+  ingredients: Ingredient[];
+
+  constructor(private shoppingListService: ShoppingListService) { }
+
+  ngOnInit() {
+    this.ingredients = this.shoppingListService.getIngredients();
+>>>>>>> ae62719d76abb3e47154ec2ccfdf10868d430d01
   }
   onIngAdded(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
